@@ -1,5 +1,7 @@
 # Spirit Halloween Remote — nRF24
 
+> **Created with AI assistance.** Claude and OpenAI ChatGPT/Codex assisted with signal analysis, code generation, documentation, and packaging. The project owner operated the hardware and confirmed the reported receiver responses. AI assistance does not establish compatibility beyond the documented tests.
+
 **`SpiritHalloweenRemote-nrf24`** is a Raspberry Pi transmitter template for firing the tested Spirit Halloween Multi-Prop receivers and compatible connected props.
 
 Trigger the tested Spirit Halloween Multi-Prop receiver family from a Raspberry Pi and an nRF24L01+ radio. Includes captured **A, B, C and D** commands, a command-line transmitter, and an optional Home Assistant bridge with dashboard buttons.
