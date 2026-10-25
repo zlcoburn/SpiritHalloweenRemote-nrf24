@@ -1,0 +1,18 @@
+[Unit]
+Description=Home Assistant Spirit prop remote transmitter
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+# Replace pi with your existing Linux account; it needs SPI and GPIO permissions.
+User=pi
+SupplementaryGroups=spi gpio
+WorkingDirectory=/opt/spirit-nrf24
+EnvironmentFile=/etc/spirit-nrf24/bridge.env
+ExecStart=/opt/spirit-nrf24/.venv/bin/spirit-ha-bridge
+Restart=on-failure
+RestartSec=10
+TimeoutStopSec=45
+
+[Install]
+WantedBy=multi-user.target

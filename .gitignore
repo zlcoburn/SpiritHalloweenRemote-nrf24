@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+build/
+dist/
+.env
+bridge.env
+ha-token
+*.cu8
+*.tgz
+*.zip

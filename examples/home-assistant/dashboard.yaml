@@ -1,0 +1,46 @@
+# One section for a Home Assistant "sections" dashboard view.
+type: grid
+cards:
+  - type: heading
+    heading: Prop Remote
+    heading_style: title
+    icon: mdi:remote
+  - type: button
+    name: A
+    icon: mdi:alpha-a-circle
+    show_state: false
+    tap_action:
+      action: perform-action
+      perform_action: input_button.press
+      target:
+        entity_id: input_button.prop_remote_a
+  - type: button
+    name: B
+    icon: mdi:alpha-b-circle
+    show_state: false
+    tap_action:
+      action: perform-action
+      perform_action: input_button.press
+      target:
+        entity_id: input_button.prop_remote_b
+  - type: button
+    name: C
+    icon: mdi:alpha-c-circle
+    show_state: false
+    tap_action:
+      action: perform-action
+      perform_action: input_button.press
+      target:
+        entity_id: input_button.prop_remote_c
+  - type: button
+    name: D
+    icon: mdi:alpha-d-circle
+    show_state: false
+    tap_action:
+      action: perform-action
+      perform_action: input_button.press
+      target:
+        entity_id: input_button.prop_remote_d
+  - type: entity
+    entity: sensor.spirit_prop_remote_bridge
+    name: Transmitter status

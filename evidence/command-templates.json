@@ -1,0 +1,48 @@
+{
+  "source": "Original controlled captures and replay tests, 2026-10-25",
+  "bit_rate_bps": 250000,
+  "rf_channel": 65,
+  "wire_header_hex": "aaddcccccccc",
+  "tx_address_register_hex": "ccccccccdd",
+  "bodies": {
+    "A": "dff04f813fa1cc24575e4b9c0ee9ea41aa360a547bf2",
+    "B": "dff04f813fa1cc24575e4b9c0ee9fb40a2be7adc8ad1",
+    "C": "dff04f813fa1cc24575e4b9c0ee9d9702abea2c22c34",
+    "D": "dff04f813fa1cc24575e4b9c0ee9fa632abef22ca932"
+  },
+  "complete_body_counts": {
+    "wide": {
+      "A": 875,
+      "B": 718,
+      "C": 884,
+      "D": 871,
+      "common": 3428
+    },
+    "A_only": {
+      "A": 1325,
+      "common": 788
+    },
+    "separate_A_D": {
+      "A": 1788,
+      "B": 1253,
+      "C": 988,
+      "D": 619,
+      "common": 3127
+    }
+  },
+  "physical_receiver_results": {
+    "A": "user-confirmed click",
+    "B": "user-confirmed click",
+    "C": "user-confirmed click",
+    "D": "user-confirmed click"
+  },
+  "range_sequences": {
+    "button": "A",
+    "consecutive_successes": 3,
+    "attempts_in_sequence": 3,
+    "burst_seconds": 4,
+    "silent_gap_seconds": 2,
+    "distance_m": null
+  },
+  "independent_retail_set_tested": false
+}

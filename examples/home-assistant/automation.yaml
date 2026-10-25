@@ -1,0 +1,8 @@
+# Example script: calls the same button as the dashboard. Add your own automation
+# triggers and arming conditions around this action as appropriate.
+alias: Fire prop A
+sequence:
+  - action: input_button.press
+    target:
+      entity_id: input_button.prop_remote_a
+mode: single

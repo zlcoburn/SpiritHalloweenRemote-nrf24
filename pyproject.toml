@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spirit-nrf24"
+version = "0.1.0"
+description = "Raspberry Pi nRF24 template for tested Spirit Multi-Prop receiver commands"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+readme = "README.md"
+dependencies = []
+
+[project.optional-dependencies]
+hardware = ["spidev>=3.5", "lgpio>=0.2.2; sys_platform == 'linux'"]
+ha = ["websockets>=12,<17"]
+analysis = ["numpy>=1.24"]
+
+[project.scripts]
+spirit-nrf24 = "spirit_nrf24.cli:main"
+spirit-ha-bridge = "spirit_nrf24.ha_bridge:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

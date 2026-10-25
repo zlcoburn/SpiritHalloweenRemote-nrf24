@@ -1,0 +1,15 @@
+# Merge this into configuration.yaml, or create four Button helpers in the UI
+# with exactly these entity IDs. Do not duplicate an existing input_button key.
+input_button:
+  prop_remote_a:
+    name: Prop Remote A
+    icon: mdi:alpha-a-circle
+  prop_remote_b:
+    name: Prop Remote B
+    icon: mdi:alpha-b-circle
+  prop_remote_c:
+    name: Prop Remote C
+    icon: mdi:alpha-c-circle
+  prop_remote_d:
+    name: Prop Remote D
+    icon: mdi:alpha-d-circle
